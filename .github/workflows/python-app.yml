@@ -21,7 +21,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: hybday0514/github-action-app
-        tags: v3, latest
+        tags: ${{ github.sha }}, v1.0.1
         registry: docker.io
         username: hybday0514
         password: dckr_pat_UQeTWKLQmE-IpqpFDqIF0FM7bwM
